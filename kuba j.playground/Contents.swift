@@ -21,3 +21,18 @@ case _ where D == 0:
 default:
     print("корней нет")
 }
+
+//3. * Пользователь вводит сумму вклада в банк и годовой процент. Найти сумму вклада через 5 лет.
+
+var deposit = 10000       //сумма вклада
+var procent: Double = 7
+procent = (procent/100)   //процент в год
+
+var y1 = Double(deposit) + Double(deposit) * Double(procent)
+var y2 = Double(y1) + Double(y1) * Double(procent)
+var y3 = Double(y2) + Double(y2) * Double(procent)
+var y4 = Double(y3) + Double(y3) * Double(procent)
+var y5 = Double(y4) + Double(y4) * Double(procent)
+
+print("При сумме вклада RUB", deposit)
+print("Сумма вклада через 5 лет будет равна", y5, "RUB")
