@@ -14,7 +14,7 @@ func number (_ number1: Int) -> () {
     }
 }
 
-number(8)
+number(6)
 number(7)
 
 // 2. Написать функцию, которая определяет, делится ли число без остатка на 3.
@@ -62,3 +62,12 @@ func addFibonacciNumber(to array: inout[Int]) {
         array.append(lastItem+penultimateItem)
     }
 }
+
+var fibonacciArray = [Int] ()
+for _ in 1...100 {
+    addFibonacciNumber(to: &fibonacciArray)
+}
+
+print("Массив чисел Фибоначчи: \(fibonacciArray)\n")
+
+
